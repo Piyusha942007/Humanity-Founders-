@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-orange-muted: var(--accent-orange-muted);
+  --color-accent-blue: var(--accent-blue);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-border-color: var(--border);
+  --color-success: var(--success);
+  
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --bg-primary: #0A0A0A;
+  --bg-surface: #141414;
+  --bg-elevated: #1E1E1E;
+  --accent-orange: #C97A52; /* Adjusted to match screenshot's softer orange */
+  --accent-orange-muted: #3D1F0F;
+  --accent-blue: #4A6B9C; /* Blue from screenshots */
+  --text-primary: #F5F5F5;
+  --text-secondary: #A0A0A0;
+  --text-tertiary: #505050;
+  --border: #2A2A2A;
+  --success: #4CAF7D;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
